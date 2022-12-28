@@ -1,0 +1,32 @@
+Desafio
+Seu vizinho, o professor Alberto Ainstem, tem muitas provas para corrigir. Porém, o que ele acha mais difícil é calcular as médias aritméticas para saber a média final dos alunos. Como todos estão ansiosos para concluir o semestre, estão pressionando muito o pobre professor Alberto. Então, como ele sabe das suas habilidades em programação, pediu para que você criasse um programa que calculasse essas médias para ele.
+
+Entrada
+A entrada serão três (03) valores inteiros.
+
+Saída
+A saída deverá ser a média aritmética desses três valores.
+
+
+
+// Para ler e escrever dados em C, utilizamos os seguintes métodos da classe Console:  
+// - scanf(): lê o(s) dado(s) de Entrada (Inputs) do usuário; 
+// - printf(): imprime um texto de Saída (Output) no console;
+// - A função getchar() retorna o código ASCII inteiro correspondente ao caractere lido
+// - o Return 0 ao final significa que o programa foi executado com sucesso, como pretendia fazer.
+
+#include<stdio.h>
+
+#define GRATIFICACAO 0.05
+#define IMPOSTO 0.07
+
+int main() {
+    float salarioBase, gratificacao, imposto, salarioFinal;
+    scanf("%f", &salarioBase);
+
+    //TODO: Calcule a gratificação, o imposto e o salário final. Em seguida print no console o salário final.
+    salarioFinal=salarioBase+(salarioBase*GRATIFICACAO)-(salarioBase*IMPOSTO);
+    printf("Salario final: %.2f\n",salarioFinal);
+    getchar();
+    return 0;
+}
